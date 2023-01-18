@@ -1,4 +1,4 @@
-package com.pizza.domain.exception
+package com.pizza.exception
 
 class CustomerNotPresentException(message: String?) : RuntimeException(message) {
 }

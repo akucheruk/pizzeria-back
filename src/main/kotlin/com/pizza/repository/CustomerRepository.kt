@@ -1,13 +1,13 @@
 package com.pizza.repository
 
-import com.pizza.domain.customer.Customer
-import java.util.Optional
+import com.pizza.entity.CustomerEntity
+import org.springframework.data.repository.CrudRepository
+import org.springframework.stereotype.Repository
+import java.util.UUID
 
-interface CustomerRepository {
+@Repository
+interface CustomerRepository : CrudRepository<CustomerEntity, UUID> {
 
-    fun getCustomerByEmail(email: String) : Optional<Customer>
+    fun findByEmail(email: String): CustomerEntity?
 
-    fun create(email : String) : Customer
-
-    fun save(customer : Customer) : Boolean
 }

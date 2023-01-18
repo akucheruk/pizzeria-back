@@ -1,9 +1,9 @@
 package com.pizza.service.topping
 
-import com.pizza.domain.topping.ToppingRatePair
+import com.pizza.dto.ToppingRatePair
 
 interface ToppingService {
 
-    fun getRateOfToppings(): Set<ToppingRatePair>
+    fun getRateOfToppings(): Set<ToppingRatePair?>
 
 }

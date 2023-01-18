@@ -1,4 +1,4 @@
-package com.pizza.controller.domain
+package com.pizza.controller
 
 data class ErrorMessage(
         var status: Int? = null,

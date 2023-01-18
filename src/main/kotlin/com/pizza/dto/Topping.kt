@@ -1,4 +1,4 @@
-package com.pizza.domain.topping
+package com.pizza.dto
 
 enum class Topping {
     CHEESE,

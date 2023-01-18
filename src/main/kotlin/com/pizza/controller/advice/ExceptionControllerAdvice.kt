@@ -1,7 +1,7 @@
 package com.pizza.controller.advice
 
-import com.pizza.controller.domain.ErrorMessage
-import com.pizza.domain.exception.CustomerNotPresentException
+import com.pizza.controller.ErrorMessage
+import com.pizza.exception.CustomerNotPresentException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ControllerAdvice

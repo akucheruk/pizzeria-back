@@ -1,13 +1,8 @@
 package com.pizza.service.customer
 
-import com.pizza.domain.customer.Customer
-import java.util.Optional
+import com.pizza.dto.Topping
 
 interface CustomerService {
 
-    fun getCustomerByEmail(email: String) : Optional<Customer>
-
-    fun createCustomer(email: String) : Customer
-
-    fun updateCustomer(customer: Customer) : Boolean
+    fun saveCustomer(email: String, toppings: Set<Topping>)
 }
